@@ -23,8 +23,8 @@ jobs:
         node-version: '20.11'
     - name: Install deps and build
       run: |
-        npm i
-        npm run build
+        pnpm install
+        pnpm build
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@v2
